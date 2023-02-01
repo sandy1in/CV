@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Contact-D</title>
+</head>
+<body>
+    <h1>Sandeep's Contact Details </h1>
+    <p>Phone :9390474406 (don't forget to add +91 before)</p>
+    <p>Mail-Id sandeepmedikonda110@gmail.com</p>
+    <p>Address - So and So</p>
+
+    <form class="" action="mailto:sandeepmedikonda110@gmail.com" method="post" enctype="text/plain">
+        <!--
+            action- 
+            Used to post the info entered here 
+        -->
+
+        <label> 
+            Your name:
+        <input type="text" name="Name " value="" required minlength="5" maxlength="25" size="10">
+       
+        <!--<input type="Submit" name="">-->
+        </label><br>
+       <br> <label for="">
+            Your Email ID
+            <input type="email" name="Email " value="" >
+        </label>
+
+        <br><label for="avatar">
+            Add your visiting card (if any) 
+        <input type="file" name="avatar" value="" accept="image/png , image/jpeg">
+        </label>
+
+
+<!--In input tags, type attribute must be an element like button,radio etc 
+It doesn't work if we dont [learn types ]-->
+<!--
+    file -> accept =""
+    text -> minlength maxlength size 
+    date -> min max span(like must and not out of bounds)
+
+-->
+        <table cellspacing="10">
+            <tr>
+        <td>
+            <p>Pick the date to book appointment</p>
+        </td>
+        <td>
+        <label for="Start">Date:</label>
+        <input type="date" name="Appointment wanted Date " value="" min="2023-02-01" max="2023-03-25" required/>
+        <span class ="validity"></span>
+        
+    </td>
+    </tr>
+    </table>
+    <label>
+        Your Message:
+    </label>
+    <textarea name="Message" id="" cols="30" rows="10"></textarea><br>
+
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+</body>
+</html>
+
+<!--video 26 time 4.26-->
